@@ -1,0 +1,28 @@
+{
+  "identifier": "com.extrastu.popclip.extension.flomoplus",
+  "name": "flomoplus",
+  "icon": "flomoplus.png",
+  "module": "flomoplus.js",
+  "description": "PopClip extension to send the selected text to flomo.",
+  "note": "To use the flomo API, you need to be flomo pro.",
+  "app": {
+    "name": "flomo",
+    "link": "https://flomoapp.com/"
+  },
+  "options": [
+    {
+      "identifier": "apikey",
+      "label": "API Key",
+      "type": "string",
+      "description": "Obtain an API key from: https://v.flomoapp.com/mine?source=incoming_webhook"
+    },
+    {
+      "identifier": "tag",
+      "label": "Tag",
+      "type": "string",
+      "description": "set a tag for the note. The tag will be added to the note in the format `#tag` and No need to enter #."
+    }
+  ],
+  "entitlements": ["network"],
+  "popclipVersion": 3785
+}
